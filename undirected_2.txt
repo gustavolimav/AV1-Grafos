@@ -1,0 +1,5 @@
+não direcionado
+casa_do_joao, pracinha, armazem, banca_de_jornal, escola, cancela, quitanda
+1,2,3,4,5,6,7,8,9,10,11
+{casa_do_joao, quitanda}, {casa_do_joao, pracinha}, {casa_do_joao, armazem}, {pracinha, quitanda}, {pracinha, banca_de_jornal},{pracinha,cancela}, {banca_de_jornal, quitanda},{banca_de_jornal, escola},{quitanda, cancela},{cancela, escola},{banca_de_jornal, armazem}
+        10,                          6,                        5,                    3,							11, 				6,							6,						3,	                      4,               8,                     13

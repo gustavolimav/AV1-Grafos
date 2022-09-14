@@ -1,0 +1,2 @@
+class GraphFileMapperException(Exception):
+	pass
