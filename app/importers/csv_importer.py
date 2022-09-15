@@ -1,6 +1,6 @@
 from graph import Graph
 from edge import Edge
-from app.vortex.vortex import Vortex
+from app.graph.vortex.vortex import Vortex
 
 
 # Vortex: 

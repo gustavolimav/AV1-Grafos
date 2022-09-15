@@ -1,6 +1,6 @@
 from typing import Dict, Set, Tuple, Union
 from app.exception.edge_exception import EdgeException
-from app.vortex.vortex import Vortex
+from app.graph.vortex.vortex import Vortex
 from edge import Edge
 from app.exception.graph_exception import GraphException
 
