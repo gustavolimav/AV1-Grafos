@@ -1,11 +1,11 @@
 from graph import Graph
-from graph_file_mapper import GraphFileMapper
-from graph_exception import GraphException
+from app.graph.graph_file_mapper import GraphFileMapper
+from app.exception.graph_exception import GraphException
 from os import system, name
-from application_headers import main_header, subheader, group_name_header
-from graph_file_mapper_exception import GraphFileMapperException
-from text_file_import_requirements import requirements
-from csv_importer import parse_csv_into_graph
+from app.menu.application_headers import main_header, subheader, group_name_header
+from app.exception.graph_file_mapper_exception import GraphFileMapperException
+from app.importers.text_file_import_requirements import requirements
+from app.importers.csv_importer import parse_csv_into_graph
 
 class Menu:
 

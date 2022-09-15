@@ -1,6 +1,6 @@
 from typing import Set, Tuple
 from typing import Union
-from edge_exception import EdgeException
+from app.exception.edge_exception import EdgeException
 
 class Edge:
 

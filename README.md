@@ -21,7 +21,7 @@
     </ul>
     <ol>
         <li>No menu inicial, digite '1' para adicionar um vértice.</li>
-        <img src="imagens/Captura de Tela 2022-04-13 às 20.13.28.png">
+        <img src="app/imagens/Captura de Tela 2022-04-13 às 20.13.28.png">
         <li>Em seguida determine se o grafo é direcionado (digite '1') ou não direcionado (digite '2').</li>
         <li>Agora crie todos os vértices do seu grafo inserindo uma label por vez. Quando finalizar, digite 'sair'.</li>
         <li>De volta ao menu incial digite '2' para inserir as arestas do grafo.</li>

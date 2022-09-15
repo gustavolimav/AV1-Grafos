@@ -1,7 +1,6 @@
-from typing import Dict
 from graph import Graph
 from edge import Edge
-from vortex import Vortex
+from app.vortex.vortex import Vortex
 
 
 # Vortex: 

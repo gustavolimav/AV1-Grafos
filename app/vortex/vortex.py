@@ -1,6 +1,6 @@
 from typing import Dict
 from edge import Edge
-from vortex_exception import VortexException
+from app.exception.vortex_exception import VortexException
 
 class Vortex:
 	def __init__(self, label: str):

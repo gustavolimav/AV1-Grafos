@@ -1,8 +1,8 @@
-from typing import Dict, List, Set, Tuple, Union
-from edge_exception import EdgeException
-from vortex import Vortex
+from typing import Dict, Set, Tuple, Union
+from app.exception.edge_exception import EdgeException
+from app.vortex.vortex import Vortex
 from edge import Edge
-from graph_exception import GraphException
+from app.exception.graph_exception import GraphException
 
 class Graph:
 	def __init__(self, is_directed=False):
