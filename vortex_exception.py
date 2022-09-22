@@ -1,2 +1,0 @@
-class VortexException(Exception):
-	pass
