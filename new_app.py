@@ -1,5 +1,4 @@
 def menu():
-
     opcao = 10
 
     while opcao != 6:
@@ -30,62 +29,89 @@ def menu():
             valorado = input()
 
             if opcao0 == 1:
-                graph = main(1, direcionado, valorado)
+                graph = create_graph(1, direcionado, valorado)
                 opcao = 10
             elif opcao0 == 2:
-                graph = main(2, direcionado, valorado)
+                graph = create_graph(2, direcionado, valorado)
                 opcao = 10
-            
+
         if opcao == 1:
             print("1) MOSTRAR GRAFO\n")
             print(graph)
 
         elif opcao == 2:
             print("2) ORDEM E TAMANHO DO GRAFO\n")
+
             ordem, tamanho = tamanho_ordem(graph, direcionado)
+
             print("Ordem: {} / Tamanho: {}".format(int(ordem), tamanho))
 
         elif opcao == 3:
-            print("3) VERTICES ADJACENTES DE UM VERTICE\n")
+            print("Escolha 1 vertice\n")
+
+            adj_list = []
+            vert = str(input())
+
+            for adjVert in graph.get(vert):
+                adj_list.append(adjVert)
+
+            print(adj_list)
+
         elif opcao == 4:
-            print("4) SE 2 VERTICES SAO ADJECENTES\n")
+            print("Escolha 2 vertices\n")
+
+            vert1 = str(input())
+            vert2 = str(input())
+
+            is_adjacente(graph, vert1, vert2)
+
         elif opcao == 5:
             print("5) CAMINHO MAIS CURTO ENTRE OS VERTICES\n")
 
             print("Escolha 2 vertices\n")
-            orig, dest = input().split()
+
+            orig = input()
+            dest = input()
+
             print_pathes(graph, orig, dest)
 
         elif opcao == 6:
             print("6) SAIR\n")
 
 
-def main(flag, dir, val):
+def is_adjacente(graph, vert1, vert2):
+    flag = False
+    for adjVert in graph.get(vert1):
+        if adjVert == vert2:
+            print("Os vertices " + vert1 + " e " + vert2 + " sao adjacentes")
+            flag = True
+    if flag is not True:
+        print("Os vertices " + vert1 + " e " + vert2 + " nao sao adjacentes")
+
+
+def create_graph(flag, dir, val):
     graph = {}
 
     if val == 's':
         if flag == 1:
             insert_graph(graph, dir)
-        
+
         if flag == 2:
             insert_graph_txt(graph, dir)
 
     elif val == 'n':
         if flag == 1:
             NV_insert_graph(graph, dir)
-        
+
         if flag == 2:
             NV_insert_graph_txt(graph, dir)
-
-    print(graph)
 
     return graph
 
 
 def tamanho_ordem(graph, dir):
-
     o = 0
-    
+
     for node in graph.keys():
         o = o + len(graph[node])
 
@@ -96,8 +122,8 @@ def tamanho_ordem(graph, dir):
 
     return o, t
 
-def insert_graph(graph, dir):
 
+def insert_graph(graph, dir):
     n, e = input("Insira o número de nós e arestas\n").split()
 
     for i in range(1, int(n) + 1):
@@ -111,7 +137,6 @@ def insert_graph(graph, dir):
 
 
 def insert_graph_txt(graph, dir):
-
     with open('input.txt') as f:
         lines = f.readlines()
 
@@ -131,7 +156,6 @@ def insert_graph_txt(graph, dir):
 
 
 def NV_insert_graph(graph, dir):
-
     n, e = input("Insira o número de nós e arestas\n").split()
 
     for i in range(1, int(n) + 1):
@@ -145,7 +169,6 @@ def NV_insert_graph(graph, dir):
 
 
 def NV_insert_graph_txt(graph, dir):
-
     with open('input.txt') as f:
         lines = f.readlines()
 
@@ -164,7 +187,6 @@ def NV_insert_graph_txt(graph, dir):
 
 
 def print_pathes(graph, orig, dest):
-
     p, d = busca(graph, orig, dest)
 
     print("Menor path do vertice {} para o vertice {}: {} / Distancia: {}".format(orig, p[-1], ' -> '.join(p[0:]), d))
@@ -176,41 +198,39 @@ def is_in_path(o, p, parent):
 
 
 def visit(graph, distances, parent, nodes_to_visit):
-
     visited = []
 
     while len(visited) < len(nodes_to_visit):
-        visiting = {node: distances[node]\
-                    for node in [node for node in\
-                    nodes_to_visit if node not in visited]}
+        visiting = {node: distances[node] \
+                    for node in [node for node in \
+                                 nodes_to_visit if node not in visited]}
 
-        next_to = min(visiting, key = distances.get)
+        next_to = min(visiting, key=distances.get)
 
         visited.append(next_to)
-        
+
         for node in graph[next_to]:
             if distances[node] > distances[next_to] + graph[next_to][node]:
-
                 distances[node] = distances[next_to] + graph[next_to][node]
                 parent[node] = next_to
 
 
 def busca(graph, orig, dest):
-    distances = {} 
-    parent = {} 
-    
-    nodes_to_visit = graph.keys() 
+    distances = {}
+    parent = {}
+
+    nodes_to_visit = graph.keys()
 
     for node in graph:
         distances[node] = float('inf')
         parent[node] = None
-    
+
     distances[orig] = 0
-    
+
     visit(graph, distances, parent, nodes_to_visit)
-                
+
     path = [dest]
-    
+
     is_in_path(orig, path, parent)
 
     return path[::-1], distances[dest]
