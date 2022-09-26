@@ -20,13 +20,19 @@ def menu():
 
             opcao0 = int(input())
 
-            print("É DIRECIONADO? (s/n)")
+            print("É DIRECIONADO? (S/n)")
 
             direcionado = input()
 
-            print("É VALORADO? (s/n)")
+            if direcionado != "n":
+                direcionado = "s"
+
+            print("É VALORADO? (S/n)")
 
             valorado = input()
+
+            if valorado != "n":
+                valorado = "s"
 
             if opcao0 == 1:
                 graph = create_graph(1, direcionado, valorado)
