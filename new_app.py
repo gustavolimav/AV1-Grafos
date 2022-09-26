@@ -53,17 +53,39 @@ def menu():
             print("Ordem: {} / Tamanho: {}".format(int(ordem), tamanho))
 
         elif opcao == 3:
+            print("3) VERTICES ADJACENTES DE UM VERTICE")
             print("Escolha 1 vertice\n")
 
-            adj_list = []
             vert = str(input())
 
-            for adjVert in graph.get(vert):
-                adj_list.append(adjVert)
+            if direcionado:
+                adj_list_in = []
+                adj_list_out = []
 
-            print(adj_list)
+                for adjVert in graph.get(vert):
+                    adj_list_in.append(adjVert)
+
+                graph_keys = graph.keys()
+
+                for key in graph_keys:
+                    for adjVert in graph.get(key):
+                        if adjVert == vert:
+                            adj_list_out.append(key)
+
+                adj_list_in_str, adj_list_out_str = adj_list_str(adj_list_in, adj_list_out)
+
+                print("Adjacentes de entrada: " + adj_list_in_str)
+                print("Adjacentes de saida: " + adj_list_out_str)
+            else:
+                adj_list = []
+
+                for adjVert in graph.get(vert):
+                    adj_list.append(adjVert)
+
+                print("Adjacentes: " + adj_list)
 
         elif opcao == 4:
+            print("4) SE 2 VERTICES SAO ADJECENTES")
             print("Escolha 2 vertices\n")
 
             vert1 = str(input())
@@ -83,6 +105,17 @@ def menu():
 
         elif opcao == 6:
             print("6) SAIR\n")
+
+
+def adj_list_str(adj_list_in, adj_list_out):
+    adj_list_in_str = "-"
+    adj_list_out_str = "-"
+    if adj_list_in is not None:
+        adj_list_in_str = str(adj_list_in)
+    if adj_list_out is not None:
+        adj_list_out_str = str(adj_list_out)
+
+    return adj_list_in_str, adj_list_out_str
 
 
 def is_adjacente(graph, vert1, vert2):
