@@ -1,9 +1,33 @@
 def menu():
     opcao = 10
 
+    print("1) INSERIR ELEMENTOS SEPARADAMENTE\n2) INSERIR ARQUIVO .TXT\n")
+
+    opcao0 = int(input())
+
+    print("É DIRECIONADO? (S/n)")
+
+    direcionado = input()
+
+    if direcionado != "n":
+        direcionado = "s"
+
+    print("É VALORADO? (S/n)")
+
+    valorado = input()
+
+    if valorado != "n":
+        valorado = "s"
+
+    if opcao0 == 1:
+        graph = create_graph(1, direcionado, valorado)
+        opcao = 10
+    elif opcao0 == 2:
+        graph = create_graph(2, direcionado, valorado)
+        opcao = 10
+
     while opcao != 6:
 
-        print("\n0) INSERIR GRAFO")
         print("1) MOSTRAR GRAFO")
         print("2) ORDEM E TAMANHO DO GRAFO")
         print("3) VERTICES ADJACENTES DE UM VERTICE")
@@ -14,36 +38,9 @@ def menu():
 
         opcao = int(input())
 
-        if opcao == 0:
-
-            print("1) INSERIR ELEMENTOS SEPARADAMENTE\n2) INSERIR ARQUIVO .TXT\n")
-
-            opcao0 = int(input())
-
-            print("É DIRECIONADO? (S/n)")
-
-            direcionado = input()
-
-            if direcionado != "n":
-                direcionado = "s"
-
-            print("É VALORADO? (S/n)")
-
-            valorado = input()
-
-            if valorado != "n":
-                valorado = "s"
-
-            if opcao0 == 1:
-                graph = create_graph(1, direcionado, valorado)
-                opcao = 10
-            elif opcao0 == 2:
-                graph = create_graph(2, direcionado, valorado)
-                opcao = 10
-
         if opcao == 1:
             print("1) MOSTRAR GRAFO\n")
-            print(graph)
+            print(str(graph))
 
         elif opcao == 2:
             print("2) ORDEM E TAMANHO DO GRAFO\n")
@@ -82,7 +79,7 @@ def menu():
                 for adjVert in graph.get(vert):
                     adj_list.append(adjVert)
 
-                print("Adjacentes: " + adj_list)
+                print("Adjacentes: " + str(adj_list))
 
         elif opcao == 4:
             print("4) SE 2 VERTICES SAO ADJECENTES")
@@ -176,7 +173,9 @@ def insert_graph(graph, dir):
 
 
 def insert_graph_txt(graph, dir):
-    with open('input.txt') as f:
+    arq = str(input("Insira o nome do arquivo txt"))
+
+    with open(arq) as f:
         lines = f.readlines()
 
     n = int(lines[0].split()[0])
