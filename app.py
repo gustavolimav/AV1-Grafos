@@ -26,14 +26,15 @@ def menu():
         graph = create_graph(2, direcionado, valorado)
         opcao = 10
 
-    while opcao != 6:
+    while opcao != 7:
 
         print("1) MOSTRAR GRAFO")
         print("2) ORDEM E TAMANHO DO GRAFO")
         print("3) VERTICES ADJACENTES DE UM VERTICE")
         print("4) SE 2 VERTICES SAO ADJECENTES")
         print("5) CAMINHO MAIS CURTO ENTRE OS VERTICES")
-        print("6) SAIR")
+        print("6) VÉRTICE COM MAIOR GRAU")
+        print("7) SAIR")
         print("\n")
 
         opcao = int(input())
@@ -101,7 +102,19 @@ def menu():
             print_pathes(graph, orig, dest)
 
         elif opcao == 6:
-            print("6) SAIR\n")
+            print("6) VÉRTICE COM MAIOR GRAU DO GRAFO\n")
+
+            if direcionado == "n":
+                vertices, value = ND_biggest_degree(graph, direcionado)
+                print("O(s) vértice(s) com o maior grau é(são): {}, com o grau: {}\n".format(vertices, value))
+            else:
+                in_v, max_in_v, out_v, max_out_v, general_v, max_general_v = biggest_degree(graph, direcionado)
+                print("O(s) vértice(s) com o maior grau de entrada é(são): {}, com o grau: {}".format(in_v, max_in_v))
+                print("O(s) vértice(s) com o maior grau de saida é(são): {}, com o grau: {}".format(out_v, max_out_v))
+                print("O(s) vértice(s) com o maior grau total é(são): {}, com o grau: {}\n".format(general_v, max_general_v))
+
+        elif opcao == 7:
+            print("7) SAIR\n")
 
 
 def adj_list_str(adj_list_in, adj_list_out):
@@ -273,5 +286,60 @@ def busca(graph, orig, dest):
 
     return path[::-1], distances[dest]
 
+def ND_biggest_degree(graph, direcionado):
+
+    degree = {}
+    degree_v = []
+
+    for i in graph.keys():
+        degree[i] = len(graph.get(i))
+
+    for key in graph.keys():
+        if degree[key] == max(degree.values()):
+            degree_v.append(key)
+
+    return degree_v, max(degree.values())
+
+def biggest_degree(graph, direcionado):
+
+    graph_keys = graph.keys()
+
+    list_values = []
+
+    degree_in = {}
+    degree_in_v = []
+    degree_out = {}
+    degree_out_v = []
+    degree = {}
+    degree_v = []
+
+    for i in graph_keys:
+        for j in graph.get(i):
+            list_values.append(j)
+        degree_in[i] = len(list_values)
+        list_values = []
+
+    list_values = []
+
+    for i in graph_keys:
+        for key in graph_keys:
+            for j in graph.get(key):
+                if j == i:
+                    list_values.append(key)
+        degree_out[i] = len(list_values)
+        list_values = []
+
+    for key in graph_keys:
+        degree[key] = degree_in.get(key) + degree_out.get(key)
+
+    for key in graph_keys:
+        if degree_in.get(key) == max(degree_in.values()):
+            degree_in_v.append(key)
+        if degree_out.get(key) == max(degree_out.values()):
+            degree_out_v.append(key)
+        if degree.get(key) == max(degree.values()):
+            degree_v.append(key)
+
+    return degree_in_v, max(degree_in.values()), degree_out_v, max(degree_out.values()), degree_v, max(degree.values())
 
 menu()
