@@ -1,7 +1,9 @@
+import csv
+
 def menu():
     opcao = 10
 
-    print("1) INSERIR ELEMENTOS SEPARADAMENTE\n2) INSERIR ARQUIVO .TXT\n")
+    print("1) INSERIR ELEMENTOS SEPARADAMENTE\n2) INSERIR ARQUIVO .TXT\n3) AEROPORTOS DO BRASIL .CSV\n")
 
     opcao0 = int(input())
 
@@ -24,6 +26,9 @@ def menu():
         opcao = 10
     elif opcao0 == 2:
         graph = create_graph(2, direcionado, valorado)
+        opcao = 10
+    elif opcao0 == 3:
+        graph = create_graph(3, direcionado, valorado)
         opcao = 10
 
     while opcao != 7:
@@ -148,12 +153,18 @@ def create_graph(flag, dir, val):
         if flag == 2:
             insert_graph_txt(graph, dir)
 
+        if flag == 3:
+            insert_graph_csv(graph, dir)
+
     elif val == 'n':
         if flag == 1:
             NV_insert_graph(graph, dir)
 
         if flag == 2:
             NV_insert_graph_txt(graph, dir)
+
+        if flag == 3:
+            NV_insert_graph_csv(graph, dir)
 
     return graph
 
@@ -205,6 +216,31 @@ def insert_graph_txt(graph, dir):
         if dir == "n":
             graph[v][u] = d
 
+def insert_graph_csv(graph, dir):
+
+    contador = 0
+    with open("Inputs/aeroportosDoBrasil - CODIGOS.csv", "r") as arquivo:
+        arquivo_csv = csv.reader(arquivo, delimiter=",")
+
+        for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
+            if contador != 0:
+                graph[linha[0]+linha[1]+linha[2]] = {}
+            contador += 1
+
+    contador = 0
+
+    with open("Inputs/aeroportosDoBrasil - Grafo.csv", "r") as arquivo:
+        arquivo_csv = csv.reader(arquivo, delimiter=",")
+        for linha in open("Inputs/aeroportosDoBrasil - Grafo.csv"):
+            line = linha.split(",")
+            if contador != 0:
+                u = line[2]
+                v = line[5]
+                d = int(line[-1].strip("\n"))
+                graph[u][v] = d
+                if dir == "n":
+                    graph[v][u] = d
+            contador += 1
 
 def NV_insert_graph(graph, dir):
     n, e = input("Insira o número de nós e arestas\n").split()
@@ -238,6 +274,32 @@ def NV_insert_graph_txt(graph, dir):
         if dir == "n":
             graph[v][u] = 0
 
+
+def NV_insert_graph_csv(graph, dir):
+
+    contador = 0
+    with open("Inputs/aeroportosDoBrasil - CODIGOS.csv", "r") as arquivo:
+        arquivo_csv = csv.reader(arquivo, delimiter=",")
+
+        for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
+            if contador != 0:
+                graph[linha[0]+linha[1]+linha[2]] = {}
+            contador += 1
+
+    contador = 0
+
+    with open("Inputs/aeroportosDoBrasil - Grafo.csv", "r") as arquivo:
+        arquivo_csv = csv.reader(arquivo, delimiter=",")
+        for linha in open("Inputs/aeroportosDoBrasil - Grafo.csv"):
+            line = linha.split(",")
+            if contador != 0:
+                u = line[2]
+                v = line[5]
+                d = int(line[-1].strip("\n"))
+                graph[u][v] = 0
+                if dir == "n":
+                    graph[v][u] = 0
+            contador += 1
 
 def print_pathes(graph, orig, dest):
     p, d = busca(graph, orig, dest)
