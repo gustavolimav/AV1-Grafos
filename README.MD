@@ -59,10 +59,12 @@
 
 ### Ordem e tamanho do grafo:
 - Verifica o tamanho (quantidade de vértices) e Ordem (quantidade de arestas)
+    <br>
     ![alt text](/Images/ordemTamanho.png)
 
 ### Vertices adjacentes de um vertice (Vértice: 3):
 - Identiica os vértices adjacentes ao escolhido (ligado por arestas)
+    <br>
     ![alt text](/Images/adjacenteVertice3.png)
 
 ### Verificar se 2 vértices são adjacentes:
