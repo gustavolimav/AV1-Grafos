@@ -51,15 +51,13 @@
 ### Grafo Valorado:
 ![alt text](/Images/valorado.png)
 
-### Exemplo com um grafo direcionado e valorado (Inputs/input_v_d):
+## Exemplo com um grafo direcionado e valorado (Inputs/input_v_d):
 
-- Ordem e tamanho do grafo:
-    <br>
-    ![alt text](/Images/ordemTamanho.png)
+### Ordem e tamanho do grafo:
+![alt text](/Images/ordemTamanho.png)
 
-- Vertices adjacentes de um vertice (Vértice: 3):
-    <br>
-    ![alt text](/Images/adjacenteVertice3.png)
+### Vertices adjacentes de um vertice (Vértice: 3):
+![alt text](/Images/adjacenteVertice3.png)
 
 ### Verificar se 2 vértices são adjacentes:
 - Vértices: 3 e 4
