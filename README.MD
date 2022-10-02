@@ -54,20 +54,24 @@
 ### Exemplo com um grafo direcionado e valorado (Inputs/input_v_d):
 
 - Ordem e tamanho do grafo:
+    <br>
     ![alt text](/Images/ordemTamanho.png)
 
 - Vertices adjacentes de um vertice (Vértice: 3):
+    <br>
     ![alt text](/Images/adjacenteVertice3.png)
 
 ### Verificar se 2 vértices são adjacentes:
 - Vértices: 3 e 4
+    <br>
     ![alt text](/Images/verificarVertices.png)
     
 - Vértices: 3 e 5
+    <br>
     ![alt text](/Images/verificaVertices2.png)
 
-- Caminho mais curto entre os vértices (Vértices: 3 e 8):
-    ![alt text](/Images/caminhoVertices.png)
+### Caminho mais curto entre os vértices (Vértices: 3 e 8):
+![alt text](/Images/caminhoVertices.png)
 
-- Vértice com maior grau:
-    ![alt text](/Images/verticeMaiorGrau.png)
+### Vértice com maior grau:
+![alt text](/Images/verticeMaiorGrau.png)
