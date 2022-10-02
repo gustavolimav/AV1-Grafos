@@ -43,23 +43,30 @@
 
 ### Grafo Direcionado ou Não direcionado:
 - Direcionado:
+    Grafo que vai de um vértice a outro
     ![alt text](/Images/direcionado.png)
 
 - Não Direcionado:
+    Grafo que não tem direção entre os vértices (todos vão e voltam)
     ![alt text](/Images/naoDirecionado.png)
 
 ### Grafo Valorado:
-![alt text](/Images/valorado.png)
+- Possui o valor de custo em suas arestas
+    ![alt text](/Images/valorado.png)
 
 ## Exemplo com um grafo direcionado e valorado (Inputs/input_v_d):
+![alt text](/Images/inputVD.png)
 
 ### Ordem e tamanho do grafo:
-![alt text](/Images/ordemTamanho.png)
+- Verifica o tamanho (quantidade de vértices) e Ordem (quantidade de arestas)
+    ![alt text](/Images/ordemTamanho.png)
 
 ### Vertices adjacentes de um vertice (Vértice: 3):
-![alt text](/Images/adjacenteVertice3.png)
+- Identiica os vértices adjacentes ao escolhido (ligado por arestas)
+    ![alt text](/Images/adjacenteVertice3.png)
 
 ### Verificar se 2 vértices são adjacentes:
+
 - Vértices: 3 e 4
     <br>
     ![alt text](/Images/verificarVertices.png)
@@ -69,7 +76,10 @@
     ![alt text](/Images/verificaVertices2.png)
 
 ### Caminho mais curto entre os vértices (Vértices: 3 e 8):
-![alt text](/Images/caminhoVertices.png)
+- Atravéz de um algorítimo de busca, verifica o caminho mais curto para o vertice A chegar até o vértice B
+    ![alt text](/Images/caminhoVertices.png)
 
 ### Vértice com maior grau:
-![alt text](/Images/verticeMaiorGrau.png)
+- Grau de Entrada: Vértice com maior número de conexões de entrada
+- Grau de Saída: Vértice com maior número de conexões de saída
+    ![alt text](/Images/verticeMaiorGrau.png)
