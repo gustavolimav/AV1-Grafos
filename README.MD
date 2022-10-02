@@ -43,47 +43,31 @@
 
 ### Grafo Direcionado ou Não direcionado:
 - Direcionado:
-![alt text](/Images/direcionado.png)
+    ![alt text](/Images/direcionado.png)
 
 - Não Direcionado:
-![alt text](/Images/naoDirecionado.png)
+    ![alt text](/Images/naoDirecionado.png)
 
 ### Grafo Valorado:
-![alt text](/Images/valorado.png)
+    ![alt text](/Images/valorado.png)
 
 ### Exemplo com um grafo direcionado e valorado (Inputs/input_v_d):
 
 - Ordem e tamanho do grafo:
- ![alt text](/Images/ordemTamanho.png)
+    ![alt text](/Images/ordemTamanho.png)
 
 - Vertices adjacentes de um vertice (Vértice: 3):
- ![alt text](/Images/adjacenteVertice3.png)
+    ![alt text](/Images/adjacenteVertice3.png)
 
 ### Verificar se 2 vértices são adjacentes:
 - Vértices: 3 e 4
- ![alt text](/Images/verificarVertices.png)
+    ![alt text](/Images/verificarVertices.png)
     
 - Vértices: 3 e 5
- ![alt text](/Images/verificaVertices2.png)
+    ![alt text](/Images/verificaVertices2.png)
 
 - Caminho mais curto entre os vértices (Vértices: 3 e 8):
- ![alt text](/Images/caminhoVertices.png)
+    ![alt text](/Images/caminhoVertices.png)
 
 - Vértice com maior grau:
- ![alt text](/Images/verticeMaiorGrau.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ![alt text](/Images/verticeMaiorGrau.png)
