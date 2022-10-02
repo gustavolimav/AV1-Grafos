@@ -84,4 +84,5 @@
 ### Vértice com maior grau:
 - Grau de Entrada: Vértice com maior número de conexões de entrada
 - Grau de Saída: Vértice com maior número de conexões de saída
+- Grau Total: A soma dos graus de sáida e graus de entrada
     ![alt text](/Images/verticeMaiorGrau.png)
