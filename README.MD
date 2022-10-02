@@ -1,1 +1,46 @@
-TODO
+# Manual do Usuário
+
+## Alunos:
+- 
+
+## Requisitos:
+- Intepretador Python 3
+- Editor de Texto
+
+## Como Utilizar:
+
+- Rodando o código temos a possibilidade de escolher a forma de input de dados:
+
+- Separadamente:
+- Ex: 3 3
+      1 2 2
+      2 2 3
+      3 1 5
+- Sendo os primeiros 2 valores a quantidade de vértices e arestas.
+- Os valores abaixo são a ligação entre os vértices e seu valor de custo (Apenas necessitando esse ultimo valor se o grafo for valorado).
+
+- Inserindo o TXT da pasta "Inputs":
+- Ex: input_v_d (o "v" significa "valorado" e o "d" significa "direcionado")
+
+- Aeroportos do Brasil:
+- Só seguir o fluxo.
+
+- Após isso, basta seguir o fluxo com opções auto-explicativas
+
+## Funcionalidades do Sistema
+
+- Grafo Direcionado ou Não direcionado:
+
+- Direcionado:
+<img src"./Images/direcionado.png">
+
+- Não Direcionado:
+<img src"./Images/naoDirecionado.png">
+
+
+
+
+
+
+
+

@@ -278,13 +278,11 @@ def NV_insert_graph_txt(graph, dir):
 def NV_insert_graph_csv(graph, dir):
 
     contador = 0
-    with open("Inputs/aeroportosDoBrasil - CODIGOS.csv", "r") as arquivo:
-        arquivo_csv = csv.reader(arquivo, delimiter=",")
-
-        for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
-            if contador != 0:
-                graph[linha[0]+linha[1]+linha[2]] = {}
-            contador += 1
+   
+    for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
+        if contador != 0:
+            graph[linha[0]+linha[1]+linha[2]] = {}
+        contador += 1
 
     contador = 0
 
