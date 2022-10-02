@@ -16,18 +16,19 @@
 - Rodando o código temos a possibilidade de escolher a forma de input de dados:
 
 - Separadamente:
-    Ex: 
+
+    `Ex:` 
     <br>
-    3 3
+    `3 3`
     <br>
-    1 2 2
+    `1 2 2`
     <br>
-    2 2 3
+    `2 2 3`
     <br>
-    3 1 5
+    `3 1 5`
     <br>
-    Sendo os primeiros 2 valores a quantidade de vértices e arestas.
-    Os valores abaixo são a ligação entre os vértices e seu valor de custo (Apenas necessitando esse ultimo valor se o grafo for valorado).
+    `Sendo os primeiros 2 valores a quantidade de vértices e arestas.`
+    `Os valores abaixo são a ligação entre os vértices e seu valor de custo (Apenas necessitando esse ultimo valor se o grafo for valorado).`
 
 - Inserindo o TXT da pasta "Inputs":
     Ex: input_v_d (o "v" significa "valorado" e o "d" significa "direcionado")
@@ -36,19 +37,19 @@
 - Aeroportos do Brasil:
     Só seguir o fluxo.
 
-    Após isso, basta seguir o fluxo com opções auto-explicativas
+- Após isso, basta seguir o fluxo com opções auto-explicativas
 
 ## Funcionalidades do Sistema
 
 - Grafo Direcionado ou Não direcionado:
 - Direcionado:
-<img src"./Images/direcionado.png">
+![alt text](/Images/direcionado.png)
 
 - Não Direcionado:
-<img src"/Images/naoDirecionado.png">
+![alt text](/Images/naoDirecionado.png)
 
 - Grafo Valorado:
-<img src"/Images/valorado.png">
+![alt text](/Images/valorado.png)
 
 
 
