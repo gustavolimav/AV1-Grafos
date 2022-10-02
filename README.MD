@@ -13,7 +13,7 @@
 
 ## `Como Utilizar:`
 
-- Rodando o código temos a possibilidade de escolher a forma de input de dados:
+### Rodando o código temos a possibilidade de escolher a forma de input de dados:
 
 - Separadamente:
 
@@ -31,10 +31,12 @@
     Os valores abaixo são a ligação entre os vértices e seu valor de custo (Apenas necessitando esse ultimo valor se o grafo for valorado).
 
 - Inserindo o TXT da pasta "Inputs":
+    <br>
     Ex: input_v_d (o "v" significa "valorado" e o "d" significa "direcionado")
 
 
 - Aeroportos do Brasil:
+    <br>
     Só seguir o fluxo.
 
 - Após isso, basta seguir o fluxo com opções auto-explicativas
