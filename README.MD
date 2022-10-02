@@ -56,18 +56,17 @@
 - Ordem e tamanho do grafo:
  ![alt text](/Images/ordemTamanho.png)
 
-- Vertices adjacentes de um vertice:
-    Vértice: 3
+- Vertices adjacentes de um vertice (Vértice: 3):
  ![alt text](/Images/adjacenteVertice3.png)
 
-- Verificar se 2 vértices são adjacentes:
-    Vértices: 3 e 4
+### Verificar se 2 vértices são adjacentes:
+- Vértices: 3 e 4
  ![alt text](/Images/verificarVertices.png)
-    Vértices: 3 e 5
+    
+- Vértices: 3 e 5
  ![alt text](/Images/verificaVertices2.png)
 
-- Caminho mais curto entre os vértices:
-    Vértices: 3 e 8
+- Caminho mais curto entre os vértices (Vértices: 3 e 8):
  ![alt text](/Images/caminhoVertices.png)
 
 - Vértice com maior grau:
