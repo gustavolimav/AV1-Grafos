@@ -1,4 +1,3 @@
-import csv
 
 def menu():
     opcao = 10
@@ -219,28 +218,24 @@ def insert_graph_txt(graph, dir):
 def insert_graph_csv(graph, dir):
 
     contador = 0
-    with open("Inputs/aeroportosDoBrasil - CODIGOS.csv", "r") as arquivo:
-        arquivo_csv = csv.reader(arquivo, delimiter=",")
 
-        for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
-            if contador != 0:
-                graph[linha[0]+linha[1]+linha[2]] = {}
-            contador += 1
+    for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
+        if contador != 0:
+            graph[linha[0]+linha[1]+linha[2]] = {}
+        contador += 1
 
     contador = 0
 
-    with open("Inputs/aeroportosDoBrasil - Grafo.csv", "r") as arquivo:
-        arquivo_csv = csv.reader(arquivo, delimiter=",")
-        for linha in open("Inputs/aeroportosDoBrasil - Grafo.csv"):
-            line = linha.split(",")
-            if contador != 0:
-                u = line[2]
-                v = line[5]
-                d = int(line[-1].strip("\n"))
-                graph[u][v] = d
-                if dir == "n":
-                    graph[v][u] = d
-            contador += 1
+    for linha in open("Inputs/aeroportosDoBrasil - Grafo.csv"):
+        line = linha.split(",")
+        if contador != 0:
+            u = line[2]
+            v = line[5]
+            d = int(line[-1].strip("\n"))
+            graph[u][v] = d
+            if dir == "n":
+                graph[v][u] = d
+        contador += 1
 
 def NV_insert_graph(graph, dir):
     n, e = input("Insira o número de nós e arestas\n").split()
@@ -278,28 +273,24 @@ def NV_insert_graph_txt(graph, dir):
 def NV_insert_graph_csv(graph, dir):
 
     contador = 0
-    with open("Inputs/aeroportosDoBrasil - CODIGOS.csv", "r") as arquivo:
-        arquivo_csv = csv.reader(arquivo, delimiter=",")
-
-        for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
-            if contador != 0:
-                graph[linha[0]+linha[1]+linha[2]] = {}
-            contador += 1
+   
+    for linha in open("Inputs/aeroportosDoBrasil - CODIGOS.csv"):
+        if contador != 0:
+            graph[linha[0]+linha[1]+linha[2]] = {}
+        contador += 1
 
     contador = 0
 
-    with open("Inputs/aeroportosDoBrasil - Grafo.csv", "r") as arquivo:
-        arquivo_csv = csv.reader(arquivo, delimiter=",")
-        for linha in open("Inputs/aeroportosDoBrasil - Grafo.csv"):
-            line = linha.split(",")
-            if contador != 0:
-                u = line[2]
-                v = line[5]
-                d = int(line[-1].strip("\n"))
-                graph[u][v] = 0
-                if dir == "n":
-                    graph[v][u] = 0
-            contador += 1
+    for linha in open("Inputs/aeroportosDoBrasil - Grafo.csv"):
+        line = linha.split(",")
+        if contador != 0:
+            u = line[2]
+            v = line[5]
+            d = int(line[-1].strip("\n"))
+            graph[u][v] = 0
+            if dir == "n":
+                graph[v][u] = 0
+        contador += 1
 
 def print_pathes(graph, orig, dest):
     p, d = busca(graph, orig, dest)
