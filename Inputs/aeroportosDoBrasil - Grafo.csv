@@ -1,0 +1,101 @@
+Distance From Airport,Aeroporto1,Distance To Airport,Aeroporto2,Distance (km), Flght Time (Hr), Flight Time (Minutes)
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Eduardo Gomes International Airport, Manaus MAO",MAO,"2847,43","  4,12 ",  247 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Eduardo Gomes International Airport, Manaus MAO",MAO,"2697,33","  3,96 ",  238 
+"Viracopos International Airport, Campinas VCP",VCP,"Eduardo Gomes International Airport, Manaus MAO",MAO,"2619,88","  3,87 ",  232 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Eduardo Gomes International Airport, Manaus MAO",MAO,"2539,39","  3,78 ",  227 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Val de Cans/Júlio Cezar Ribeiro International Airport, Belém BEL",BEL,"2461,92","  3,70 ",  222 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Val de Cans/Júlio Cezar Ribeiro International Airport, Belém BEL",BEL,"2448,79","  3,68 ",  221 
+"Pinto Martins International Airport, Fortaleza FOR",FOR,"Eduardo Gomes International Airport, Manaus MAO",MAO,"2389,59","  3,62 ",  217 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Pinto Martins International Airport, Fortaleza FOR",FOR,"2346,48","  3,57 ",  214 
+"Viracopos International Airport, Campinas VCP",VCP,"Pinto Martins International Airport, Fortaleza FOR",FOR,"2329,89","  3,55 ",  213 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Marechal Cunha Machado International Airport, São Luís SLZ",SLZ,"2330,82","  3,55 ",  213 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Governador Aluízio Alves International Airport, Natal NAT",NAT,"2295,82","  3,52 ",  211 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Marechal Cunha Machado International Airport, São Luís SLZ",SLZ,"2251,27","  3,47 ",  208 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Presidente Castro Pinto International Airport, João Pessoa JPA",JPA,"2189,84","  3,40 ",  204 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Pinto Martins International Airport, Fortaleza FOR",FOR,"2176,41","  3,39 ",  203 
+"Viracopos International Airport, Campinas VCP",VCP,"Guararapes - Gilberto Freyre International Airport, Recife REC",REC,"2106,18","  3,31 ",  199 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Guararapes - Gilberto Freyre International Airport, Recife REC",REC,"2100,71","  3,30 ",  198 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Val de Cans/Júlio Cezar Ribeiro International Airport, Belém BEL",BEL,"2087,05","  3,29 ",  197 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Senador Petrônio Portela Airport, Teresina THE",THE,"2080,31","  3,28 ",  197 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Governador Aluízio Alves International Airport, Natal NAT",NAT,"2074,62","  3,27 ",  196 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Eduardo Gomes International Airport, Manaus MAO",MAO,"1948,52","  3,14 ",  188 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Zumbi dos Palmares Airport, Maceió MCZ",MCZ,"1919,87","  3,10 ",  186 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Guararapes - Gilberto Freyre International Airport, Recife REC",REC,"1859,12","  3,04 ",  182 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Pinto Martins International Airport, Fortaleza FOR",FOR,"1858,33","  3,04 ",  182 
+"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"Afonso Pena Airport, Curitiba CWB",CWB,"1805,51","  2,98 ",  179 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Governador Aluízio Alves International Airport, Natal NAT",NAT,"1769,97","  2,94 ",  176 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Santa Maria Airport, Aracaju AJU",AJU,"1705,55","  2,87 ",  172 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Pinto Martins International Airport, Fortaleza FOR",FOR,"1691,61","  2,85 ",  171 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Guararapes - Gilberto Freyre International Airport, Recife REC",REC,"1653,95","  2,81 ",  169 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Val de Cans/Júlio Cezar Ribeiro International Airport, Belém BEL",BEL,"1612,28","  2,77 ",  166 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Salgado Filho Airport, Porto Alegre POA",POA,"1605,19","  2,76 ",  166 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Guararapes - Gilberto Freyre International Airport, Recife REC",REC,"1607,64","  2,76 ",  166 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Marechal Rondon Airport, Cuiabá CGB",CGB,"1566,44","  2,72 ",  163 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Marechal Cunha Machado International Airport, São Luís SLZ",SLZ,"1531,18","  2,68 ",  161 
+"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"Congonhas Airport, São Paulo CGH",CGH,"1480,29","  2,62 ",  157 
+"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"Viracopos International Airport, Campinas VCP",VCP,"1458,25","  2,60 ",  156 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"1452,09","  2,59 ",  155 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Salgado Filho Airport, Porto Alegre POA",POA,"1361,97","  2,49 ",  149 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Marechal Rondon Airport, Cuiabá CGB",CGB,"1360,01","  2,49 ",  149 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Marechal Rondon Airport, Cuiabá CGB",CGB,"1329,47","  2,46 ",  148 
+"Congonhas Airport, São Paulo CGH",CGH,"Marechal Rondon Airport, Cuiabá CGB",CGB,"1328,53","  2,46 ",  148 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Hercílio Luz International Airport, Florianópolis FLN",FLN,"1313,77","  2,44 ",  146 
+"Val de Cans/Júlio Cezar Ribeiro International Airport, Belém BEL",BEL,"Eduardo Gomes International Airport, Manaus MAO",MAO,"1299,01","  2,42 ",  145 
+"Viracopos International Airport, Campinas VCP",VCP,"Marechal Rondon Airport, Cuiabá CGB",CGB,1247,"  2,37 ",  142 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Bahia - Jorge Amado Airport, Ilhéus IOS",IOS,"1236,02","  2,35 ",  141 
+"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,1224,"  2,34 ",  140 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"1217,85","  2,33 ",  140 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Campo Grande Airport, Campo Grande CGR",CGR,"1208,48","  2,32 ",  139 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Salgado Filho Airport, Porto Alegre POA",POA,"1121,96","  2,23 ",  134 
+"Salgado Filho Airport, Porto Alegre POA",POA,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,"1119,97","  2,23 ",  134 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Porto Seguro Airport, Porto Seguro BPS",BPS,"1095,97","  2,20 ",  132 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"1084,7","  2,19 ",  131 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Afonso Pena Airport, Curitiba CWB",CWB,"1081,89","  2,19 ",  131 
+"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"Pinto Martins International Airport, Fortaleza FOR",FOR,"1015,68","  2,11 ",  127 
+"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"959,52","  2,05 ",  123 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Eurico de Aguiar Salles Airport, Vitória VIX",VIX,"942,83","  2,03 ",  122 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,"928,19","  2,02 ",  121 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Santa Genoveva Airport, Goiânia GYN",GYN,"928,32","  2,02 ",  121 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Campo Grande Airport, Campo Grande CGR",CGR,"907,44","  1,99 ",  119 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Congonhas Airport, São Paulo CGH",CGH,"872,56","  1,96 ",  118 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Marechal Rondon Airport, Cuiabá CGB",CGB,"877,31","  1,96 ",  118 
+"Viracopos International Airport, Campinas VCP",VCP,"Salgado Filho Airport, Porto Alegre POA",POA,"874,38","  1,96 ",  118 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Campo Grande Airport, Campo Grande CGR",CGR,"877,44","  1,96 ",  118 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Salgado Filho Airport, Porto Alegre POA",POA,"865,54","  1,95 ",  117 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"854,83","  1,94 ",  116 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Afonso Pena Airport, Curitiba CWB",CWB,"846,16","  1,93 ",  116 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Cataratas International Airport, Foz Do Iguaçu IGU",IGU,"845,32","  1,93 ",  116 
+"Congonhas Airport, São Paulo CGH",CGH,"Salgado Filho Airport, Porto Alegre POA",POA,"837,71","  1,92 ",  115 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Santa Genoveva Airport, Goiânia GYN",GYN,"809,02","  1,89 ",  113 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Viracopos International Airport, Campinas VCP",VCP,"797,96","  1,87 ",  112 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Hercílio Luz International Airport, Florianópolis FLN",FLN,"758,99","  1,83 ",  110 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Eurico de Aguiar Salles Airport, Vitória VIX",VIX,"729,58","  1,80 ",  108 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Afonso Pena Airport, Curitiba CWB",CWB,"672,68","  1,74 ",  104 
+"Afonso Pena Airport, Curitiba CWB",CWB,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,"675,51","  1,74 ",  104 
+"Deputado Luiz Eduardo Magalhães International Airport, Salvador SSA",SSA,"Guararapes - Gilberto Freyre International Airport, Recife REC",REC,"648,62","  1,71 ",  103 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"590,87","  1,65 ",  99 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Leite Lopes Airport, Ribeirão Preto RAO",RAO,"585,86","  1,64 ",  98 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Regional de Maringá - Sílvio Nane Junior Airport, Maringá MGF",MGF,"564,98","  1,62 ",  97 
+"Afonso Pena Airport, Curitiba CWB",CWB,"Salgado Filho Airport, Porto Alegre POA",POA,"533,94","  1,59 ",  95 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Ten. Cel. Aviador César Bombonato Airport, Uberlândia UDI",UDI,"537,73","  1,59 ",  95 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Congonhas Airport, São Paulo CGH",CGH,"524,33","  1,57 ",  94 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Hercílio Luz International Airport, Florianópolis FLN",FLN,"514,96","  1,56 ",  94 
+"Viracopos International Airport, Campinas VCP",VCP,"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"498,75","  1,55 ",  93 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Leite Lopes Airport, Ribeirão Preto RAO",RAO,"502,39","  1,55 ",  93 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"496,44","  1,54 ",  92 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Pampulha - Carlos Drummond de Andrade Airport, Belo Horizonte PLU",PLU,"476,2","  1,52 ",  91 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Governador José Richa Airport, Londrina LDB",LDB,"475,4","  1,52 ",  91 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Eurico de Aguiar Salles Airport, Vitória VIX",VIX,"417,71","  1,46 ",  88 
+"Viracopos International Airport, Campinas VCP",VCP,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,"406,73","  1,45 ",  87 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Viracopos International Airport, Campinas VCP",VCP,"398,39","  1,44 ",  86 
+"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,"374,86","  1,41 ",  85 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Tancredo Neves International Airport, Belo Horizonte CNF",CNF,362,"  1,40 ",  84 
+"Congonhas Airport, São Paulo CGH",CGH,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,"365,58","  1,40 ",  84 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Afonso Pena Airport, Curitiba CWB",CWB,"359,08","  1,39 ",  83 
+"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"Congonhas Airport, São Paulo CGH",CGH,"359,65","  1,39 ",  83 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Santos Dumont Airport, Rio De Janeiro SDU",SDU,"343,33","  1,38 ",  83 
+"Viracopos International Airport, Campinas VCP",VCP,"Afonso Pena Airport, Curitiba CWB",CWB,"348,4","  1,38 ",  83 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Rio Galeão – Tom Jobim International Airport, Rio De Janeiro GIG",GIG,"336,78","  1,37 ",  82 
+"Congonhas Airport, São Paulo CGH",CGH,"Afonso Pena Airport, Curitiba CWB",CWB,"331,11","  1,36 ",  82 
+"Guarulhos - Governador André Franco Montoro International Airport, São Paulo GRU",GRU,"Leite Lopes Airport, Ribeirão Preto RAO",RAO,"288,68","  1,32 ",  79 
+"Presidente Juscelino Kubistschek International Airport, Brasília BSB",BSB,"Santa Genoveva Airport, Goiânia GYN",GYN,"162,63","  1,18 ",  71 
