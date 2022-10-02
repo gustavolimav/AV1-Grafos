@@ -49,7 +49,7 @@
     ![alt text](/Images/naoDirecionado.png)
 
 ### Grafo Valorado:
-    ![alt text](/Images/valorado.png)
+![alt text](/Images/valorado.png)
 
 ### Exemplo com um grafo direcionado e valorado (Inputs/input_v_d):
 
