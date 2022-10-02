@@ -199,7 +199,7 @@ def insert_graph(graph, dir):
 def insert_graph_txt(graph, dir):
     arq = str(input("Insira o nome do arquivo txt\n"))
 
-    with open("Inputs/" + arq) as f:
+    with open("Inputs/" + arq + ".txt") as f:
         lines = f.readlines()
 
     n = int(lines[0].split()[0])
@@ -258,7 +258,7 @@ def NV_insert_graph(graph, dir):
 def NV_insert_graph_txt(graph, dir):
     arq = str(input("Insira o nome do arquivo txt\n"))
 
-    with open("Inputs/" + arq) as f:
+    with open("Inputs/" + arq + ".txt") as f:
         lines = f.readlines()
 
     n = int(lines[0].split()[0])
