@@ -61,16 +61,16 @@ def menu():
                 adj_list_out = []
 
                 for adjVert in graph.get(vert):
-                    adj_list_in.append(adjVert)
+                    adj_list_out.append(adjVert)
 
                 graph_keys = graph.keys()
 
                 for key in graph_keys:
                     for adjVert in graph.get(key):
                         if adjVert == vert:
-                            adj_list_out.append(key)
+                            adj_list_in.append(key)
 
-                adj_list_in_str, adj_list_out_str = adj_list_str(adj_list_in, adj_list_out)
+                adj_list_out_str, adj_list_in_str = adj_list_str(adj_list_out, adj_list_in)
 
                 print("Adjacentes de entrada: " + adj_list_in_str)
                 print("Adjacentes de saida: " + adj_list_out_str)
@@ -318,7 +318,7 @@ def biggest_degree(graph, direcionado):
     for i in graph_keys:
         for j in graph.get(i):
             list_values.append(j)
-        degree_in[i] = len(list_values)
+        degree_out[i] = len(list_values)
         list_values = []
 
     list_values = []
@@ -328,17 +328,17 @@ def biggest_degree(graph, direcionado):
             for j in graph.get(key):
                 if j == i:
                     list_values.append(key)
-        degree_out[i] = len(list_values)
+        degree_in[i] = len(list_values)
         list_values = []
 
     for key in graph_keys:
-        degree[key] = degree_in.get(key) + degree_out.get(key)
+        degree[key] = degree_out.get(key) + degree_in.get(key)
 
     for key in graph_keys:
-        if degree_in.get(key) == max(degree_in.values()):
-            degree_in_v.append(key)
         if degree_out.get(key) == max(degree_out.values()):
             degree_out_v.append(key)
+        if degree_in.get(key) == max(degree_in.values()):
+            degree_in_v.append(key)
         if degree.get(key) == max(degree.values()):
             degree_v.append(key)
 
