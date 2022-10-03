@@ -244,7 +244,7 @@ def NV_insert_graph(graph, dir):
         graph[str(i)] = {}
 
     for i in range(int(e)):
-        u, v, d = input("Insira a aresta no formato origem/destino\n").split()
+        u, v = input("Insira a aresta no formato origem/destino\n").split()
         graph[u][v] = 0
         if dir == "n":
             graph[v][u] = 0
