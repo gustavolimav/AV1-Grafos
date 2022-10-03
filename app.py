@@ -300,7 +300,12 @@ def print_pathes(graph, orig, dest):
 
 def is_in_path(o, p, parent):
     while o not in p:
-        p.append(parent[p[-1]])
+        index = p[-1]
+        p_ = parent[index]
+        if p_ is None:
+            break
+        else:
+            p.append(p_)
 
 
 def visit(graph, distances, parent, nodes_to_visit):
