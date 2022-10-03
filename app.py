@@ -169,15 +169,15 @@ def create_graph(flag, dir, val):
 
 
 def tamanho_ordem(graph, dir):
-    o = 0
+    t = 0
 
     for node in graph.keys():
-        o = o + len(graph[node])
+        t = t + len(graph[node])
 
     if dir == 'n':
-        o = o / 2
+        t = t / 2
 
-    t = len(graph.keys())
+    o = len(graph.keys())
 
     return o, t
 
